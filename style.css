@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .87);
+    text-align: center;
+    margin: 0;
+}
+
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    list-style-type: none;
+    user-select: none;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    li {
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+
+    #product-icon{
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #sign-in{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border: 30px;
+
+        &:hover{
+            text-underline: auto;
+        }
+    }
+
+}
+
+#logo{
+    margin-top: 10%;
+}
+
+#search-bar{
+
+    margin-top: 20px;
+    height: 45px;
+    width: 75%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin-left: 10%;
+    /*position: relative;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+section > nav{
+
+    display: flex;
+    list-style-type: none;
+    user-select: none;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    gap: 10px;
+
+    li {
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        /*border: 1px solid lightgray;*/
+        background-color: whitesmoke;
+        /*padding: 10px;*/
+
+    }
+}
+
+#lang-wrapper {
+    margin-top: 18px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: #4d5156;
+    line-height: 20px;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+footer>div {
+
+    /*justify-content: flex-end;*/
+    /*margin-top: 100%;*/
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    margin-top: 240px;
+    margin-bottom: 5px;
+    display: flex;
+
+    nav {
+
+        list-style-type: none;
+        user-select: none;
+        /*justify-content: space-between;*/
+        /*justify-content: flex-start;*/
+        align-content: space-around ;
+
+
+
+        li {
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+
+        #nav1{
+            justify-content: flex-start;
+        }
+
+        #nav2{
+            justify-content: flex-end;
+        }
+
+    }
+}
